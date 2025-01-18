@@ -1,0 +1,34 @@
+.list-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  width: 25%;
+  text-decoration: none;
+  border: .1rem solid #000000;
+  border-radius: 10px;
+  margin: .3rem;
+  padding: .2rem .2rem .2rem .5rem;
+}
+
+.form-check-label {
+  padding: 0 0 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
