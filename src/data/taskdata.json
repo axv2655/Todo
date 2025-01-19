@@ -2,16 +2,14 @@
     {
         "id": 1,
         "name": "Task 1",
-        "date": "1/12/2025",
-        "time": "10:00:00 AM",
+        "date": "2025-01-20T10:30:00",
         "project": "Project 1",
         "projectid": 1
     },
     {
         "id": 2,
         "name": "Task 2",
-        "date": "1/15/2025",
-        "time": "12:00:00 AM",
+        "date": "2025-01-20T10:30:00",
         "project": "Project 2",
         "projectid": 2
     }

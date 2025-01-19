@@ -7,6 +7,9 @@ import Modal from "react-bootstrap/Modal";
 import hamburger from "../assets/hamburger.svg";
 import ProjectData from "../data/projectdata.json";
 import { useProject } from "./useProject";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 interface Project {
   id: number;
@@ -50,13 +53,12 @@ function OffCanvas() {
   return (
     <>
       <div className="project-button">
-        <Button variant="primary" onClick={handleShowCanvas}>
-          <Image
-            src={hamburger}
-            thumbnail
-            style={{ background: "none", border: "none" }}
-          />
-        </Button>
+        <FontAwesomeIcon
+          icon={faBars}
+          onClick={handleShowCanvas}
+          style={{ color: "black", fontSize: "24px" }}
+        />
+        123
       </div>
       <Offcanvas show={showCanvas} onHide={handleCloseCanvas}>
         <Offcanvas.Header closeButton>
@@ -67,7 +69,10 @@ function OffCanvas() {
             <div key={project.id} className="project-item">
               <Button
                 variant="light"
-                onClick={() => setSelectedProjectInfo(project)}
+                onClick={() => {
+                  handleCloseCanvas();
+                  setSelectedProjectInfo(project);
+                }}
               >
                 {project.name}
               </Button>
