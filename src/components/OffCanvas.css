@@ -1,0 +1,22 @@
+.project-button {
+    background-color: #91E5F6;
+    color: #91E5F6;
+    padding: 1rem 0 0 1rem;
+    width: 5%;
+    height: 5%;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.project-item {
+    padding: .5rem;
+}
+
+.btn {
+    padding: 0 0 1rem 1rem;
+}

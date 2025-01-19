@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Project 1",
+        "task_count": 0
+    },
+    {
+        "id": 2,
+        "name": "Project 2",
+        "task_count": 0
+    }
+  ]
